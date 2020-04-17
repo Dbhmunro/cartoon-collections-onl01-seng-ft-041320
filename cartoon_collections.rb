@@ -1,5 +1,3 @@
-require 'pry'
-
 def roll_call_dwarves (dwarf_names)# code an argument here
   # Your code here
   dwarf_names.each_with_index { |name, index| puts "#{index+1}. #{name}" }
@@ -18,6 +16,5 @@ end
 def find_the_cheese (foods)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  foods.detect { |food| cheese_types.include(food) }
-    binding.pry
+  foods.detect { |food| cheese_types.include?(food) }
 end
